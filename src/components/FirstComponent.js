@@ -1,3 +1,5 @@
+import React from "react";
+
 const FirstComponent = () => {
   return (
     <div>
@@ -5,3 +7,5 @@ const FirstComponent = () => {
     </div>
   );
 };
+
+export default FirstComponent;

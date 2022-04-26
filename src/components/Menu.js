@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MenuIcon } from "@heroicons/react/outline";
+import SubMenu from "./SubMenu";
 
 export default function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -70,6 +71,24 @@ export default function Menu() {
           </nav>
         </div>
       </div>
+      <div className="border-b">
+        <ul className="flex flex-row list-none lg:ml-auto flex-wrap xl:justify-around">
+          {subMenus.map((item) => (
+            <SubMenu name={item} />
+          ))}
+        </ul>
+      </div>
     </>
   );
 }
+
+const subMenus = [
+  "Documentacao",
+  "visita Presencial",
+  "Lista de Sedex",
+  "Rol",
+  "Peculio",
+  "Sedex",
+  "Vale Postal",
+  "Auxilio Reclusao",
+];

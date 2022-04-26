@@ -11,11 +11,12 @@ import SubMenu from "./components/SubMenu";
 class App extends Component {
   render() {
     return (
-      <div className="2xl:container mx-auto border my-0 w-full">
+      <div className="2xl:container mx-auto border my-0 w-full h-screen">
         <Header />
         <Menu />
 
-        <div className="bg-sky-700 m-28">main</div>
+        <div className="bg-sky-700 h-full">main</div>
+
         <Footer />
       </div>
     );

@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 //css
 import "./App.css";
 import FirstComponent from "./components/FirstComponent";
@@ -8,19 +7,17 @@ import Footer from "./pages/Footer";
 import Header from "./pages/Header";
 import SubMenu from "./components/SubMenu";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="2xl:container mx-auto border my-0 w-full h-screen">
-        <Header />
-        <Menu />
+function App() {
+  return (
+    <div className="2xl:container mx-auto border my-0 w-full h-screen">
+      <Header />
+      <Menu />
 
-        <div className="bg-sky-700 h-full">main</div>
+      <div className="bg-sky-700 h-full">main</div>
 
-        <Footer />
-      </div>
-    );
-  }
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
